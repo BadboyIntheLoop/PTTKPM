@@ -1,0 +1,37 @@
+
+    <div class="container">
+        <div class="card row">
+            <h4 class="card-header">
+                Hàng hóa
+            </h4>
+            <div class="card-body">
+                <div>
+                    <div class="form-group">
+                        <h5 class="card-title">Danh sách hàng hoá</h5>
+                    </div>
+                    <table class="table">
+                        <tr>
+                            <th>Mã hàng hoá</th>
+                            <th>Tên hàng hóa</th>
+                            <th>Số lượng</th>
+                            <th>Ngày nhập hàng</th>
+                            <th>Ngày hết hạn</th>
+                            <th>Đơn giá</th>
+                        </tr>
+                        {{#each dsHangHoa}}
+                        <tr>
+                            <td>{{this.maHangHoa}}</td>
+                            <td>{{this.tenHangHoa}}</td>
+                            <td>{{this.soLuong}} {{this.donVi}}</td>
+                            <td>{{this.ngayNhap}}</td>
+                            <td>{{this.ngayHetHan}}</td>
+                            <td>{{this.donGia}}</td>
+                        </tr>
+                        {{/each}}
+                    </table>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
